@@ -39,3 +39,34 @@ footer {
 .mainSection {
   margin-top: 65px;
 }
+
+.containerLogin {
+  padding-top: 200px;
+}
+
+.containerSign {
+  padding-top: 100px;
+}
+
+.cardSample,
+.signBtn,
+.createBtn {
+  background-color: #010050 !important;
+}
+
+.header {
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.alertSpan {
+  width: 300px;
+  height: 30px;
+  background-color: black;
+  margin: auto;
+  color: lightgreen;
+}

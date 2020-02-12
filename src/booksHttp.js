@@ -193,7 +193,6 @@ function submitBook(event) {
         })
         .catch(err => console.log(err));
     } else {
-      console.log(id);
       http
         .put(`http://localhost:3000/api/books/${id}`, data)
         .then(data => {
