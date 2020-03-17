@@ -14,72 +14,79 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container containerLogin ">
-      <div class="card mb-3 m-auto" style="max-width: 540px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <div
-              class="card cardSample text-white bg-dark mb-3 pb-3"
-              style="max-width: 18rem;"
-            >
-              <div class="card-header">Books Publishment</div>
-              <div class="card-body">
-                <h5 class="card-title">
-                  Open Source Books Publishment Application
-                </h5>
-                <p class="card-text">
-                  Wisdom is Power
-                </p>
-                <p class="card-text">
-                  Books Publishment © Copyright
-                </p>
+    <div class="generalSection">
+      <div class="container containerLogin ">
+        <div class="card mb-3 m-auto" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <div
+                class="card cardSample text-white bg-dark mb-3 pb-3"
+                style="max-width: 18rem;"
+              >
+                <div class="card-header">Books Publishment</div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Open Source Books Publishment Application
+                  </h5>
+                  <p class="card-text">
+                    Wisdom is Power
+                  </p>
+                  <p class="card-text">
+                    Books Publishment © Copyright
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <div class="header">
-                <h1>
-                  Sign In
-                </h1>
-              </div>
-              <div class="container">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"></span>
-                  </div>
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Eamil"
-                    aria-label="Eamil"
-                    aria-describedby="basic-addon1"
-                  />
+            <div class="col-md-8">
+              <div class="card-body">
+                <div class="header">
+                  <h1>
+                    Sign In
+                  </h1>
                 </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"></span>
+                <form>
+                  <div class="container">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Eamil"
+                        aria-label="Eamil"
+                        aria-describedby="basic-addon1"
+                        id="email"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Password"
+                        aria-label="Password"
+                        aria-describedby="basic-addon1"
+                        id="password"
+                      />
+                    </div>
+                    <button type="submit" class="btn signBtn btn-secondary">
+                      Sign In</button
+                    ><br />
+                    <a href="http://">
+                      Create New Account
+                    </a>
                   </div>
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Password"
-                    aria-label="Password"
-                    aria-describedby="basic-addon1"
-                  />
-                </div>
-                <button type="button" class="btn signBtn btn-secondary">
-                  Sign In</button
-                ><br />
-                <a href="http://">
-                  Create New Account
-                </a>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="src/signIn.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

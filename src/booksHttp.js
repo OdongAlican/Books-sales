@@ -159,7 +159,7 @@ document.querySelector(".card-form").addEventListener("click", cancelEdit);
 
 function getBooks() {
   http
-    .getHttp("http://localhost:3000/api/books")
+    .getHttp("http://localhost:3001/api/books")
     .then(data => ui.showBooks(data))
     .catch(err => err);
 }
@@ -185,7 +185,7 @@ function submitBook(event) {
   } else {
     if (id === "") {
       http
-        .postHttp("http://localhost:3000/api/books", data)
+        .postHttp("http://localhost:3001/api/books", data)
         .then(data => {
           ui.showAlert("Book Added", "alert alert-success col-md-3 mx-auto");
           ui.clearFields();
@@ -194,7 +194,7 @@ function submitBook(event) {
         .catch(err => console.log(err));
     } else {
       http
-        .put(`http://localhost:3000/api/books/${id}`, data)
+        .put(`http://localhost:3001/api/books/${id}`, data)
         .then(data => {
           ui.showAlert("Book Updated", "alert alert-success col-md-3 mx-auto");
           getBooks();
@@ -210,7 +210,7 @@ function deleteBook(e) {
     const id = e.target.dataset.id;
     if (confirm("Are you Sure ?")) {
       http
-        .delete(`http://localhost:3000/api/books/${id}`)
+        .delete(`http://localhost:3001/api/books/${id}`)
         .then(data => {
           ui.showAlert("Book Removed", "alert alert-success col-md-3 mx-auto");
           getBooks();
