@@ -14,10 +14,6 @@ The purpose of this project is to  the develop a books Publishment app.
 - CSS,
 - JavaScript
 
-## Live Demo
-
-[Live Demo Link](https://raw.githack.com/OdongAlican/Building-with-Backgrounds-and-Gradients/develop/)
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
